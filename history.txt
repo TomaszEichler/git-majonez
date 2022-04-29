@@ -1,0 +1,36 @@
+ 2013  mkdir git-majonez
+ 2014  cd git-majonez/
+ 2015  git init
+ 2016  touch main.cpp
+ 2017  vim main.cpp 
+ 2018  git status
+ 2019  git add main.cpp 
+ 2020  git commit -m"Initial commit"
+ 2021  vim main.cpp 
+ 2022  git status
+ 2023  git add main.cpp 
+ 2024  git commit -m"Farewell changed"
+ 2025  git remote add origin https://github.com/TomaszEichler/git-majonez.git
+ 2026  git push -u origin master
+ 2027  git status
+ 2028  git checkout -b cs
+ 2029  git log --pretty=oneline
+ 2030  git reset HEAD^
+ 2031  git status
+ 2032  git log --oneline
+ 2033  vim main.cpp 
+ 2034  git status
+ 2035  git add main.cpp 
+ 2036  git commit -m"Greetings"
+ 2037  git log --oneline
+ 2038  git push origin cs
+ 2039  git checkout master
+ 2040  git merge cs
+ 2041  git status
+ 2042  vim main.cpp 
+ 2043  git status
+ 2044  git add main.cpp 
+ 2045  git commit -m"Merge branch cs"
+ 2046  git log --pretty=oneline --graph
+ 2047  history
+ 2048  history > history.txt
